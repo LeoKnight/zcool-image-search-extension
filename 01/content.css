@@ -1,0 +1,8 @@
+.crx_mask {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  position: absolute !important;
+  z-index: 999999 !important;
+  cursor: pointer;
+}

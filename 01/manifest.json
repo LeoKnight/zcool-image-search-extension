@@ -1,0 +1,27 @@
+{
+  "name": "zcool-image-search",
+  "description": "Zcool Image Search Chrome Extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "web_accessible_resources": ["svg/icon.svg","svg/icon_hover.svg"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "contextMenus"
+  ]
+}
